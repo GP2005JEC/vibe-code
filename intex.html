@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Team Nova Mental Health Companion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-overlay">
+      <img src="image.png" alt="Logo" class="logo">
+      <h1>AI-Powered Mental Health Companion</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#chat">Chat</a>
+        <a href="#mood">Mood Tracker</a>
+        <a href="#resources">Resources</a>
+        <a href="#privacy">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 🏠 Home Section -->
+    <section id="home" class="two-column">
+      <div class="text">
+        <h2>Welcome</h2>
+        <p>Chat anonymously, track your mood, and access resources to improve your emotional well-being.</p>
+        <button onclick="scrollToChat()">Start Chat</button>
+      </div>
+      <div class="images">
+        <img src="img2.jpeg" alt="Mental Image">
+        <img src="img3.jpeg" alt="Mental Image">
+        <img src="img4.jpeg" alt="Mental Image">
+        <img src="img5.jpeg" alt="Mental Image">
+        <img src="12.jpg" alt="Mental Image">
+      </div>
+    </section>
+
+    <!-- 💬 Chat Section -->
+    <section id="chat" class="two-column">
+      <div class="text">
+        <h2>Anonymous Chat</h2>
+        <div class="chat-box" id="chatBox">
+          <p><b>AI:</b> Hello! How are you feeling today?</p>
+        </div>
+        <input type="text" id="userInput" placeholder="Type your message..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </section>
+
+    <!-- 📊 Mood Tracker -->
+    <section id="mood">
+      <h2>Mood Tracker</h2>
+      <p>Rate your mood:</p>
+      <select id="moodSelect">
+        <option value="5">😊 Excellent</option>
+        <option value="4">🙂 Good</option>
+        <option value="3">😐 Okay</option>
+        <option value="2">😟 Bad</option>
+        <option value="1">😢 Terrible</option>
+      </select>
+      <button onclick="saveMood()">Save Mood</button>
+      <div id="moodLog"></div>
+    </section>
+
+    <!-- 📚 Self-Help Resources -->
+    <section id="resources">
+      <h2>Self-Help Resources</h2>
+      <p>
+        Self-help is a powerful approach to managing your mental health. Engaging in daily mindfulness, regular physical activity, connecting with loved ones, and establishing a positive routine can significantly improve well-being. Start small by allocating just 10 minutes a day for breathing exercises or light journaling. Over time, these habits build emotional resilience and self-awareness. Remember, consistency is key. Every small step contributes to long-term mental wellness.
+      </p>
+      <ul>
+        <li><a href="https://www.calm.com/" target="_blank">Calm - Guided Meditation</a></li>
+        <li><a href="https://www.headspace.com/" target="_blank">Headspace - Mindfulness for All</a></li>
+        <li><a href="https://www.youtube.com/watch?v=inpok4MKVLM" target="_blank">5-Min Breathing Video</a></li>
+        <li><a href="https://www.psychologytoday.com/" target="_blank">Psychology Today - Therapist Finder</a></li>
+        <li><a href="https://www.mentalhealth.org.uk/publications/how-to-mental-health" target="_blank">Mental Health Foundation Tips</a></li>
+      </ul>
+    </section>
+
+    <!-- 🔐 Privacy Policy -->
+<!-- 🔐 Privacy Policy -->
+<section id="privacy">
+  <h2>Privacy Policy</h2>
+  <p>
+    Your privacy is our top priority. This chat is completely anonymous; no personal identifying information is required or collected.
+  </p>
+  <p>
+    We do not store or share any chat conversations or mood tracking data. All interactions happen locally in your browser during your session.
+  </p>
+  <p>
+    We do not use cookies or tracking technologies that collect your personal data.
+  </p>
+  <p>
+    Any data you enter, such as mood ratings, are only saved temporarily and are not transmitted to or stored on any servers.
+  </p>
+  <p>
+    We are committed to maintaining your confidentiality and protecting your emotional well-being.
+  </p>
+  <p>
+    If you choose to click on external resource links, please be aware that those websites have their own privacy policies, which we encourage you to review.
+  </p>
+  <p>
+    By using this platform, you acknowledge and agree that you do so at your own discretion and risk.
+  </p>
+  <p>
+    For any questions regarding our privacy practices, please contact us at <a href="mailto:privacy@teamnova.ai">privacy@teamnova.ai</a>.
+  </p>
+</section>
+
+  </main>
+  <!-- 🆘 Support Contact Section -->
+<section id="support-contacts">
+  <h2>Find Support Now</h2>
+  <div class="support-contact-cards">
+    <div class="support-contact-card">
+      <span class="support-icon">📞</span>
+      <div>
+        <b>Call</b><br>
+        1-800-950-6264
+      </div>
+    </div>
+    <div class="support-contact-card">
+      <span class="support-icon">💬</span>
+      <div>
+        <b>Text</b><br>
+        Text "NAMI" to 62640
+      </div>
+    </div>
+    <div class="support-contact-card">
+      <span class="support-icon">📱</span>
+      <div>
+        <b>In a crisis?</b><br>
+        Call or Text 988
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    <p>© 2025 AI Mental Health Companion</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
