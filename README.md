@@ -1,1 +1,1 @@
-# vibe-code
+# vibe-code contest
